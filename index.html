@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
+</head>
+<body>
+    <div id="root">
+    </div>
+    <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script type="text/babel">
+
+        function App() {
+            return (
+                <div className="main">
+                    <header>
+                        <h1>Sally's Student Resume</h1>
+                        <p>Energetic, hard-working and motivated software engineer with experience at major tech companies</p>
+                    </header>
+                    <section>
+                        <h2>Sally's Contact Info:</h2>
+                        <address>
+                            <p>Full name: Sally Doe</p>
+                            <p>Email Sally <a href="mailto:sallydoe@yahoo.com">here</a></p>
+                            <p>Sally's cell phone #: 262-536-4567</p>
+                            <img src={"http://softdentalcare.com/wp-content/uploads/2015/11/smiling-woman-620x240.jpg"} alt="Portrait of Sally Doe"></img>
+                        </address>
+                    </section>
+                    
+                    <section>
+                        <h2>Sally's Education Info:</h2>
+                        <h3>Colleges Attended:</h3>
+                            <ul>
+                            <li>University of Wisconsin-Madison (2 years)</li>
+                            <li>University of Wisconsin-Milwaukee (2 years)</li>
+                            </ul>
+                    </section>
+
+                    <section>
+                        <h2>Sally's Employment History:</h2>
+                        <h3>Google Headquarters</h3>
+                            <ul>
+                            <li>Job title: Junior Full Stack Web Developer</li>
+                            <li>Dates of employment: June 2014 to August 2017</li>
+                            <li>Duties: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+                            </ul>  
+                        <h3>Microsoft Headquarters</h3>
+                            <ul>
+                            <li>Job title: Software Engineer</li>
+                            <li>Dates of employment: September 2014 to present</li>
+                            <li>Duties:Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+                            </ul>
+                    </section>  
+                </div>
+            );
+        };
+
+        ReactDOM.render(
+            <header />,
+            document.querySelector("#root")
+        );
+    
+        ReactDOM.render(
+            <App />,
+            document.querySelector("#root")
+        );
+    </script>
+</body>
+</html>
